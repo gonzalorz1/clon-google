@@ -1,0 +1,196 @@
+*.{
+    margin: o; 
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 1px;
+    height: 100vh;
+    background-color: #202124;
+
+}
+
+header{
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    padding: 0 12px;
+
+}
+
+header .options{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+
+}
+
+header .options a {
+    font-family: Arial,sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+header .options a img {
+    height: 35px;
+    width: 35px;
+
+ }
+
+header .options .user img {
+    height: 40;
+    width: 40;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    height: calc(80% - 40px - 40px);
+
+}
+
+main figure {
+    display: flex;
+    max-height: 100%;
+    max-width: 100%;
+    padding-bottom: 20px;
+    object-position: center bottom;
+    
+}
+
+main .container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+main .container .search-buttons button{
+    background-color: #303134;
+    border: none;
+    padding: 12px;
+    color: whitesmoke;
+    border-radius: 4px;
+}
+
+main .container .search-buttons{
+    display: flex;
+    gap: 12px;
+}
+    
+main .container .search {
+    display: flex;
+    align-items: center;
+    padding: 5px 8px 0px 14px;
+    height: 30px;
+    width: 450px;
+    border-radius: 38px;
+    border: 1px solid;
+    border-color: grey;
+}
+
+main .container .search input {
+    width: 100%;
+    height: 25px;
+    background-color: transparent;
+    padding: 0px 0px 5px 0px;
+    border: none;
+    color: whitesmoke;
+    font-family: Arial,sans-serif;
+}
+
+main .container .search img {
+    display: inline-block
+    width: 25px;
+    height: 25px;
+}
+ 
+main .container .search button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+}
+
+main .container .search .micro{
+    padding: 0px 8px 5px 8px;
+    
+}
+
+main .container .search .camara {
+    padding: 0px 8px 5px 8px;
+}
+
+footer {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #171717;
+    position: absolute;
+    bottom: 0;
+    flex-direction: column;
+
+
+}
+
+footer span {
+    display: flex;
+    flex-flow: column;
+    margin: 10px 0px 10px 10px;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid; color: grey;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer section {
+    width: 100%;
+    height: 80px;
+    bottom: 0%;
+    display: flex
+}
+
+footer section div.izq {
+    display: flex;
+    margin: 3px 50px 3px 50px;
+    gap: 20px;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif; color: whitesmoke;
+    align-items: center;
+}
+footer section div.izq a {
+    color: grey;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+footer section div.derecha {
+    display: flex;
+    gap: 15px;
+    margin: 3px 30px 3px 1100px ;
+    align-items: center;
+    
+}
+
+footer section div.derecha a{
+    color: grey;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+}
