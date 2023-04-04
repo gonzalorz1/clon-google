@@ -1,4 +1,4 @@
-*.{
+*{
     margin: o; 
     padding: 0;
     box-sizing: border-box;
@@ -71,6 +71,7 @@ main .container {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
 }
 
 main .container .search-buttons button{
@@ -94,21 +95,26 @@ main .container .search {
     width: 450px;
     border-radius: 38px;
     border: 1px solid;
-    border-color: grey;
+    border-color: #5f6368;
+    background-color: #202124;
 }
 
 main .container .search input {
+    display: flex;
     width: 100%;
     height: 25px;
     background-color: transparent;
     padding: 0px 0px 5px 0px;
     border: none;
-    color: whitesmoke;
+    color: #e8eaed;
+    outline: none;
+    word-wrap: break-word;
     font-family: Arial,sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
 
 main .container .search img {
-    display: inline-block
+    display: inline-block;
     width: 25px;
     height: 25px;
 }
@@ -117,27 +123,29 @@ main .container .search button {
     display: flex;
     background-color: transparent;
     border: none;
+    padding: 0px 8px 5px 8px;
+
 }
 
-main .container .search .micro{
-    padding: 0px 8px 5px 8px;
-    
-}
 
-main .container .search .camara {
-    padding: 0px 8px 5px 8px;
+main .container .search:hover {
+    background-color: #19191a;
 }
 
 footer {
-    display: flex;
+    
     height: 80px;
     width: 100%;
     background-color: #171717;
     position: absolute;
     bottom: 0;
-    flex-direction: column;
+}
 
-
+footer a{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 12px;
 }
 
 footer span {
@@ -152,45 +160,52 @@ footer span {
 }
 
 footer section {
-    width: 100%;
-    height: 80px;
-    bottom: 0%;
-    display: flex
-}
-
-footer section div.izq {
     display: flex;
-    margin: 3px 50px 3px 50px;
-    gap: 20px;
-    color: grey;
-    font-family: Arial, Helvetica, sans-serif; color: whitesmoke;
+    flex-direction:row;
     align-items: center;
-}
-footer section div.izq a {
-    color: grey;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-
-footer section div.derecha {
+.izq {
     display: flex;
-    gap: 15px;
-    margin: 3px 30px 3px 1100px ;
     align-items: center;
-    
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 10px 0px 15px 10px;
 }
 
-footer section div.derecha a{
-    color: grey;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-
+.derecha {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 10px 10px 15px 0px;
 }
 
 
 
+@media (min-width: 565px) {
 
+    footer section {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
 
+@media (min-width: 665px) {
+
+    footer section {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+        /* gap: 10px; */
+        flex-wrap: wrap;
+    }
 }
